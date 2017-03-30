@@ -33,7 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
 		'understrap' ); ?></a>
 
-		<nav class="navbar navbar-toggleable-md  navbar-inverse bg-inverse">
+		<nav class="navbar navbar-toggleable-md  navbar-dark bg-inverse">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">
@@ -65,7 +65,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php wp_nav_menu(
 					array(
 						'theme_location'  => 'primary',
-						'container_class' => 'collapse navbar-collapse',
+						'container_class' => 'collapse navbar-collapse justify-content-end',
 						'container_id'    => 'navbarNavDropdown',
 						'menu_class'      => 'navbar-nav',
 						'fallback_cb'     => '',
@@ -78,5 +78,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php endif; ?>
 
 		</nav><!-- .site-navigation -->
-
+                <nav class="navbar navbar-custom site-navigation navbar-toggleable-md" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+                    <div class="container">
+                        <?php wp_nav_menu(
+                                array(
+                                    'menu' => 'Menu blog',
+                                    'theme_location' => 'sub-primary',
+                                    'container_class' => 'collapse navbar-collapse justify-content-end',
+                                    'menu_class' => 'nav navbar-nav',
+                                    'fallback_cb' => '',
+                                    'menu_id' => 'sub-main-menu',
+                                    'walker' => new wp_bootstrap_navwalker()
+                                )
+                        ); ?>
+                    </div>
+                </nav>
 	</div><!-- .wrapper-navbar end -->
