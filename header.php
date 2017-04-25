@@ -36,12 +36,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<nav class="navbar navbar-toggleable-md  navbar-dark bg-inverse">
 
 		<?php if ( 'container' == $container ) : ?>
-			<div class="container">
+			<div class="container" onclick="if (jQuery('.navbar-toggler').is(':visible')) {jQuery('.navbar-collapse').toggle().toggleClass('in');}">
 		<?php endif; ?>
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+				<button class="navbar-toggler" type="button">
+                                    <i class="fa fa-bars" aria-hidden="true"></i> Menu
+                                </button>
 
 					<!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>
