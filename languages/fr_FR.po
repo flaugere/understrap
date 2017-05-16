@@ -1,21 +1,19 @@
-<<<<<<< HEAD
-# Loco Gettext template
 msgid ""
 msgstr ""
 "Project-Id-Version: understrap\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/_s\n"
-"POT-Creation-Date: 2016-12-20 18:30+0100\n"
-"PO-Revision-Date: 2016-12-21 11:31+0100\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: fr\n"
+"POT-Creation-Date: 2017-05-16 16:09+0000\n"
+"PO-Revision-Date: 2017-05-16 16:10+0000\n"
+"Last-Translator: Gwen <gwen@musculationaufeminin.com>\n"
+"Language-Team: French (France)\n"
+"Language: fr-FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Revision-Date: Mon Jul 04 2016 09:13:18 GMT+0200 (CEST)\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Loco - https://localise.biz/\n"
 "X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
 "__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
 "_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
@@ -43,7 +41,132 @@ msgstr ""
 "X-Poedit-SearchPath-18: page.php\n"
 "X-Poedit-SearchPath-19: functions.php\n"
 "X-Poedit-SearchPath-20: page-templates\n"
-"X-Poedit-SearchPath-21: inc\n"
+"X-Poedit-SearchPath-21: inc"
+
+#. translators: %1$s: smiley
+#: 404.php:62
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: footer.php:27
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: footer.php:28
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:31
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: loop-templates/content-none.php:23
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: loop-templates/content-none.php:34
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#. Name of the template
+msgid "Empty Page Template"
+msgstr ""
+
+#. Name of the template
+msgid "Full Width Page"
+msgstr ""
+
+#: inc/setup.php:51
+msgid "Primary Menu"
+msgstr ""
+
+#: inc/setup.php:122
+msgid "Read More..."
+msgstr ""
+
+#: inc/widgets.php:34
+msgid "Hero Slider"
+msgstr ""
+
+#: inc/widgets.php:44
+msgid "Hero Static"
+msgstr ""
+
+#: inc/widgets.php:54
+msgid "Footer Full"
+msgstr ""
+
+#: inc/customizer.php:36
+msgid "Slider Settings"
+msgstr ""
+
+#: inc/customizer.php:45
+msgid "Number of slides displaying at once"
+msgstr ""
+
+#: inc/customizer.php:57
+msgid "Slider Time (in ms)"
+msgstr ""
+
+#: inc/customizer.php:69
+msgid "Loop Slider Content"
+msgstr ""
+
+#: woocommerce/single-product/review-rating.php:28
+#, php-format
+msgid "Rated %d out of 5"
+msgstr ""
+
+#: woocommerce/single-product/review-rating.php:29
+msgid "out of 5"
+msgstr ""
+
+#: woocommerce/single-product/rating.php:36
+#, php-format
+msgid "Rated %s out of 5"
+msgstr ""
+
+#: woocommerce/single-product/rating.php:38
+#, php-format
+msgid "out of %s5%s"
+msgstr ""
+
+#: woocommerce/single-product/rating.php:39
+#, php-format
+msgid "based on %s customer rating"
+msgid_plural "based on %s customer ratings"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/rating.php:42
+#, php-format
+msgid "%s customer review"
+msgid_plural "%s customer reviews"
+msgstr[0] "%s avis client"
+msgstr[1] "%s avis clients"
+
+#. Name of the theme
+msgid "UnderStrap"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "http://understrap.com"
+msgstr ""
+
+#. Author of the theme
+msgid "Holger Koenemann"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://www.holgerkoenemann.de"
+msgstr ""
 
 #: search.php:29
 #, php-format
@@ -69,12 +192,6 @@ msgstr ""
 #: 404.php:42
 msgid "Most Used Categories"
 msgstr "Catégories les plus utilisées"
-
-#. translators: %1$s: smiley
-#: 404.php:62
-#, php-format
-msgid "Try looking in the monthly archives. %1$s"
-msgstr "Jetez un œil dans les archives mensuelles. %1$s"
 
 #: author.php:34
 msgid "About:"
@@ -120,20 +237,6 @@ msgstr "Commentaire plus récent &rarr;"
 msgid "Comments are closed."
 msgstr "Les commentaires sont fermés."
 
-#: footer.php:27
-msgid "http://wordpress.org/"
-msgstr "http://wordpress.org/"
-
-#: footer.php:28
-#, php-format
-msgid "Proudly powered by %s"
-msgstr "Propulsé par %s"
-
-#: footer.php:31
-#, php-format
-msgid "Theme: %1$s by %2$s."
-msgstr "Thème: %1$s par %2$s."
-
 #: footer.php:33
 #, php-format
 msgid "Version: %1$s"
@@ -162,13 +265,6 @@ msgstr "Editer"
 msgid "Nothing Found"
 msgstr "Non trouvé"
 
-#: loop-templates/content-none.php:23
-#, php-format
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-"Prêt à publier votre premier article ? <a href=\"%1$s\">Démarrer ici</a>."
-
 #: loop-templates/content-none.php:28
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
@@ -177,12 +273,6 @@ msgstr ""
 "Désolé, rien ne correspond à votre recherche. Veuillez réessayez avec "
 "d'autres termes."
 
-#: loop-templates/content-none.php:34
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr "Il semble que nous ne puissions trouver ce que vous recherchez."
-
 #. Name of the template
 msgid "Blank Page Template"
 msgstr "Modèle sans formattage"
@@ -190,14 +280,6 @@ msgstr "Modèle sans formattage"
 #. Name of the template
 msgid "Left and Right Sidebar Layout"
 msgstr "Colonnes à gauche et à droite"
-
-#. Name of the template
-msgid "Empty Page Template"
-msgstr "Modèle de page vide"
-
-#. Name of the template
-msgid "Full Width Page"
-msgstr "Page pleine largeur"
 
 #. Name of the template
 msgid "Left Sidebar Layout"
@@ -229,7 +311,7 @@ msgstr "par %s"
 msgid ", "
 msgstr ","
 
-# dans une catégorie 
+# dans une catégorie
 #: inc/template-tags.php:53
 #, php-format
 msgid "Posted in %1$s"
@@ -272,14 +354,6 @@ msgctxt "Next post link"
 msgid "%title&nbsp;<i class=\"fa fa-angle-right\"></i>"
 msgstr "%title&nbsp;<i class=\"fa fa-angle-right\"></i>"
 
-#: inc/setup.php:51
-msgid "Primary Menu"
-msgstr "Menu principal"
-
-#: inc/setup.php:122
-msgid "Read More..."
-msgstr "Lire la suite..."
-
 #: inc/widgets.php:14
 msgid "Right Sidebar"
 msgstr "Colonne droite"
@@ -287,18 +361,6 @@ msgstr "Colonne droite"
 #: inc/widgets.php:24
 msgid "Left Sidebar"
 msgstr "Colonne gauche"
-
-#: inc/widgets.php:34
-msgid "Hero Slider"
-msgstr "Héro dynamique"
-
-#: inc/widgets.php:44
-msgid "Hero Static"
-msgstr "Héro statique"
-
-#: inc/widgets.php:54
-msgid "Footer Full"
-msgstr "Pied pleine page"
 
 #: inc/custom-comments.php:24
 msgid "Name"
@@ -312,22 +374,6 @@ msgstr "Courriel"
 msgctxt "noun"
 msgid "Comment"
 msgstr "Commentaire"
-
-#: inc/customizer.php:36
-msgid "Slider Settings"
-msgstr "Paramètres du Slider"
-
-#: inc/customizer.php:45
-msgid "Number of slides displaying at once"
-msgstr "Nombre de slides à afficher "
-
-#: inc/customizer.php:57
-msgid "Slider Time (in ms)"
-msgstr "Temps d'exposition (en ms)"
-
-#: inc/customizer.php:69
-msgid "Loop Slider Content"
-msgstr "Boucle sur le contenu du Slider"
 
 #: inc/customizer.php:81
 msgid "Theme Layout Settings"
@@ -494,9 +540,8 @@ msgstr ""
 #: woocommerce/checkout/payment.php:42
 msgid ""
 "Since your browser does not support JavaScript, or it is disabled, please "
-"ensure you click the <em>Update Totals</em> button before placing your "
-"order. You may be charged more than the amount stated above if you fail to "
-"do so."
+"ensure you click the <em>Update Totals</em> button before placing your order."
+" You may be charged more than the amount stated above if you fail to do so."
 msgstr ""
 "Votre navigateur ne prend pas en charge JavaScript, veuillez cliquer sur le "
 "bouton <em>Rafraîchir les totaux</ em> avant de passer votre commande. Vous "
@@ -723,52 +768,15 @@ msgstr "Télécharger"
 msgid "No downloads available yet."
 msgstr "Téléchargements encore indisponibles."
 
-#: woocommerce/single-product/review-rating.php:28
-#, php-format
-msgid "Rated %d out of 5"
-msgstr ""
-
-#: woocommerce/single-product/review-rating.php:29
-msgid "out of 5"
-msgstr ""
-
-#: woocommerce/single-product/rating.php:36
-#, php-format
-msgid "Rated %s out of 5"
-msgstr ""
-
-#: woocommerce/single-product/rating.php:38
-#, php-format
-msgid "out of %s5%s"
-msgstr ""
-
-#: woocommerce/single-product/rating.php:39
-#, php-format
-msgid "based on %s customer rating"
-msgid_plural "based on %s customer ratings"
-msgstr[0] ""
-msgstr[1] ""
-
-#: woocommerce/single-product/rating.php:42
-#, php-format
-msgid "%s customer review"
-msgid_plural "%s customer reviews"
-msgstr[0] ""
-msgstr[1] ""
-
-#. Name of the theme
-msgid "UnderStrap"
-msgstr "UnderStrap"
-
 #. Description of the theme
 msgid ""
 "Combination of Automattic´s _s theme and Bootstrap 4. Made as a solid "
 "starting point for your next theme project and WordPress website. Use it as "
 "starter theme or as a parent theme. It is up to you. Including Font Awesome "
 "support, built-in widget slider and much more you need for basic websites. "
-"IMPORTANT: All developer dependencies are not bundled with this install "
-"file. Just download the .zip, extract it and run \"npm install\" and \"gulp "
-"copy-assets\" inside the extracted /understrap folder."
+"IMPORTANT: All developer dependencies are not bundled with this install file."
+" Just download the .zip, extract it and run \"npm install\" and \"gulp copy-"
+"assets\" inside the extracted /understrap folder."
 msgstr ""
 "Une combinaison du thème _s d'Automattic et de Bootstrap 4. Un excellent "
 "point de départ pour votre prochain projet de thème et de site Web de "
@@ -778,331 +786,3 @@ msgstr ""
 "développeurs ne sont pas livrées avec ce fichier d'installation. Il suffit "
 "de télécharger le fichier .zip, de l'extraire et d'exécuter \"npm install\" "
 "et \"gulp copy-assets\" dans le dossier extract / understrap."
-
-#. Theme URI of the theme
-msgid "http://understrap.com"
-msgstr "http://understrap.com"
-
-#. Author of the theme
-msgid "Holger Koenemann"
-msgstr "Holger Koenemann"
-
-#. Author URI of the theme
-msgid "http://www.holgerkoenemann.de"
-msgstr "http://www.holgerkoenemann.de"
-
-#~ msgid "Sidebar"
-#~ msgstr "Sidebar"
-
-#~ msgid ""
-#~ "Combination of Automattic´s _s theme and Bootstrap 4. Made as a solid "
-#~ "starting point for your next theme project and WordPress website. Use it "
-#~ "as starter theme or as parent theme. It is up to you."
-#~ msgstr ""
-#~ "Une combinaison du thème _s  (Automattic) et de Bootstrap 4. Un solide "
-#~ "point de départ pour tout vos projets de site et de thèmes WordPress. A "
-#~ "utiliser comme thème de départ ou comme thème parent."
-=======
-# Loco Gettext template
-#, fuzzy
-msgid ""
-msgstr ""
-"Project-Id-Version: understrap\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/_s\n"
-"POT-Creation-Date: 2015-09-01 21:23+0200\n"
-"POT-Revision-Date: Mon Jul 04 2016 09:13:18 GMT+0200 (CEST)\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: \n"
-"Language: \n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Loco - https://localise.biz/\n"
-"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
-"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
-"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
-"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
-"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-SearchPath-0: footer.php\n"
-"X-Poedit-SearchPath-1: header.php\n"
-"X-Poedit-SearchPath-2: index.php\n"
-"X-Poedit-SearchPath-3: statichero.php\n"
-"X-Poedit-SearchPath-4: 404.php\n"
-"X-Poedit-SearchPath-5: archive.php\n"
-"X-Poedit-SearchPath-6: search.php\n"
-"X-Poedit-SearchPath-7: sticky.php\n"
-"X-Poedit-SearchPath-8: single.php\n"
-"X-Poedit-SearchPath-9: sidebar.php\n"
-"X-Poedit-SearchPath-10: comment-form.php\n"
-"X-Poedit-SearchPath-11: comments.php\n"
-"X-Poedit-SearchPath-12: content-none.php\n"
-"X-Poedit-SearchPath-13: content-page.php\n"
-"X-Poedit-SearchPath-14: content-search.php\n"
-"X-Poedit-SearchPath-15: content-single.php\n"
-"X-Poedit-SearchPath-16: content.php\n"
-"X-Poedit-SearchPath-17: hero.php\n"
-"X-Poedit-SearchPath-18: page.php\n"
-"X-Poedit-SearchPath-19: functions.php\n"
-"X-Poedit-SearchPath-20: page-templates\n"
-"X-Poedit-SearchPath-21: inc"
-
-#: ../comments.php:28
-#, php-format
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Un commentaire sur &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s commentaires sur &ldquo;%2$s&rdquo;"
-
-#: ../comments.php:35 ../comments.php:56
-msgid "Comment navigation"
-msgstr "Commentaires"
-
-#: ../comments.php:37 ../comments.php:58
-msgid "&larr; Older Comments"
-msgstr "&larr; Commentaires plus anciens"
-
-#: ../comments.php:40 ../comments.php:61
-msgid "Newer Comments &rarr;"
-msgstr "Commentaires plus récents &rarr;"
-
-#: ../comments.php:72
-msgid "Comments are closed."
-msgstr "Il n'est pas possible de commenter"
-
-#: ../author.php:27
-msgid "About:"
-msgstr "À propos :"
-
-#: ../author.php:32 ../inc/custom-comments.php:16
-msgid "Website"
-msgstr "Site internet"
-
-#: ../author.php:34
-msgid "Profile"
-msgstr "Profil"
-
-#: ../author.php:38
-msgid "Posts by"
-msgstr "Articles de"
-
-#: ../footer.php:24
-msgid "http://wordpress.org/"
-msgstr ""
-
-#: ../footer.php:24
-#, php-format
-msgid "Proudly powered by %s"
-msgstr ""
-
-#: ../footer.php:26
-#, php-format
-msgid "Theme: %1$s by %2$s."
-msgstr ""
-
-#: ../header.php:30
-msgid "Skip to content"
-msgstr "Aller au contenu"
-
-#: ../search.php:23
-#, php-format
-msgid "Search Results for: %s"
-msgstr "Résultats de la recherche : %s"
-
-#: ../404.php:22
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "Oops ! Cette page n'existe pas."
-
-#: ../404.php:27
-msgid ""
-"It looks like nothing was found at this location. Maybe try one of the links "
-"below or a search?"
-msgstr "Il semble que cette page n'existe pas, essayez une nouvelle recherche ?"
-
-#: ../404.php:37
-msgid "Most Used Categories"
-msgstr "Catégories les plus utilisées"
-
-#. translators: %1$s: smiley
-#: ../404.php:57
-#, php-format
-msgid "Try looking in the monthly archives. %1$s"
-msgstr ""
-
-#: ../searchform.php:9 ../searchform.php:13
-msgid "Search"
-msgstr "Rechercher"
-
-#: ../searchform.php:11
-msgid "Search &hellip;"
-msgstr "Rechercher &hellip;"
-
-#. Name of the template
-msgid "Full Width Page"
-msgstr ""
-
-#. Name of the template
-msgid "Empty Page Template"
-msgstr ""
-
-#: ../inc/widgets.php:10
-msgid "Sidebar"
-msgstr ""
-
-#: ../inc/widgets.php:20
-msgid "Hero Slider"
-msgstr ""
-
-#: ../inc/widgets.php:30
-msgid "Hero Static"
-msgstr ""
-
-#: ../inc/widgets.php:40
-msgid "Footer Full"
-msgstr ""
-
-#: ../inc/customizer.php:24
-msgid "Slider Settings"
-msgstr ""
-
-#: ../inc/customizer.php:33
-msgid "Number of slides displaying at once"
-msgstr ""
-
-#: ../inc/customizer.php:45
-msgid "Slider Time (in ms)"
-msgstr ""
-
-#: ../inc/customizer.php:57
-msgid "Loop Slider Content"
-msgstr ""
-
-#: ../inc/template-tags.php:18
-#, php-format
-msgid " Edited %4$s"
-msgstr " Modifié %4$s"
-
-#: ../inc/template-tags.php:29
-#, php-format
-msgctxt "post date"
-msgid "Posted on %s"
-msgstr "Publié le %s"
-
-#: ../inc/template-tags.php:34
-#, php-format
-msgctxt "post author"
-msgid "by %s"
-msgstr "par %s"
-
-#. translators: used between list items, there is a space after the comma
-#: ../inc/template-tags.php:51 ../inc/template-tags.php:57
-msgid ", "
-msgstr ", "
-
-#: ../inc/template-tags.php:53
-#, php-format
-msgid "Posted in %1$s"
-msgstr "Posté dans %1$s"
-
-#: ../inc/template-tags.php:59
-#, php-format
-msgid "Tagged %1$s"
-msgstr "Taggé %1$s"
-
-#: ../inc/template-tags.php:65
-msgid "Leave a comment"
-msgstr "Laisser un commentaire"
-
-#: ../inc/template-tags.php:65
-msgid "1 Comment"
-msgstr "1 commentaire"
-
-#: ../inc/template-tags.php:65
-#, php-format
-msgid "% Comments"
-msgstr "% commentaires"
-
-#. translators: %s: Name of current post
-#: ../inc/template-tags.php:72
-#, php-format
-msgid "Edit %s"
-msgstr "Modifier %s"
-
-#: ../inc/setup.php:48
-msgid "Primary Menu"
-msgstr ""
-
-#: ../inc/setup.php:98
-msgid "Read More..."
-msgstr ""
-
-#: ../inc/custom-comments.php:12
-msgid "Name"
-msgstr "Nom"
-
-#: ../inc/custom-comments.php:14
-msgid "Email"
-msgstr "E-mail"
-
-#: ../inc/custom-comments.php:25
-msgctxt "noun"
-msgid "Comment"
-msgstr "Commentaire"
-
-#: ../loop-templates/content-single.php:29 ../loop-templates/content.php:33 ..
-#: /loop-templates/content-page.php:25
-msgid "Pages:"
-msgstr "Pages :"
-
-#: ../loop-templates/content-none.php:16
-msgid "Nothing Found"
-msgstr "Il n'y a rien ici"
-
-#: ../loop-templates/content-none.php:24
-#, php-format
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-
-#: ../loop-templates/content-none.php:28
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr "Désolée, rien n'a été trouvé avec ces mots-clés..."
-
-#: ../loop-templates/content-none.php:33
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
-
-#: ../loop-templates/content-page.php:34
-msgid "Edit"
-msgstr "Modifier"
-
-#. Name of the theme
-msgid "UnderStrap"
-msgstr ""
-
-#. Theme URI of the theme
-msgid "http://understrap.com"
-msgstr ""
-
-#. Description of the theme
-msgid ""
-"Combination of Automattic´s _s theme and Bootstrap 4. Made as a solid "
-"starting point for your next theme project and WordPress website. Use it as "
-"starter theme or as parent theme. It is up to you."
-msgstr ""
-
-#. Author of the theme
-msgid "Holger Koenemann"
-msgstr ""
-
-#. Author URI of the theme
-msgid "http://www.holgerkoenemann.de"
-msgstr ""
->>>>>>> d1eb6fc... Language French
