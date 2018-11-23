@@ -24,7 +24,7 @@
 
 	</header><!-- .entry-header -->
 
-       <?php echo sprintf('<a href="%s" rel="bookmark">%s</a>', esc_url(get_permalink()), get_the_post_thumbnail( $post->ID, 'large' )); ?> 
+	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="entry-content">
 

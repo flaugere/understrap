@@ -8,25 +8,27 @@
 get_header();
 
 $container   = get_theme_mod( 'understrap_container_type' );
-$sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
+
 ?>
 
 <div class="wrapper" id="search-wrapper">
 
-	<div class="<?php echo esc_html( $container ); ?>" id="content" tabindex="-1">
+	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">
 
 			<!-- Do the left sidebar check and opens the primary div -->
-			<?php get_template_part( 'global-templates/left-sidebar-check', 'none' ); ?>
+			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
 			<main class="site-main" id="main">
 
 				<?php if ( have_posts() ) : ?>
 
 					<header class="page-header">
-						/* translators:*/
-							<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'understrap' ),
+						
+							<h1 class="page-title"><?php printf(
+							/* translators:*/
+							 esc_html__( 'Search Results for: %s', 'understrap' ),
 								'<span>' . get_search_query() . '</span>' ); ?></h1>
 
 					</header><!-- .page-header -->
@@ -59,11 +61,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 		</div><!-- #primary -->
 
 		<!-- Do the right sidebar check -->
-		<?php if ( 'right' === $sidebar_pos || 'both' === $sidebar_pos ) : ?>
-
-			<?php get_sidebar( 'right' ); ?>
-
-		<?php endif; ?>
+		<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
 
 	</div><!-- .row -->
 

@@ -31,9 +31,9 @@ if ( ! function_exists( 'understrap_body_classes' ) ) {
 add_filter( 'body_class', 'understrap_body_classes' );
 
 // Removes tag class from the body_class array to avoid Bootstrap markup styling issues.
-add_filter( 'body_class', 'adjust_body_class' );
+add_filter( 'body_class', 'understrap_adjust_body_class' );
 
-if ( ! function_exists( 'adjust_body_class' ) ) {
+if ( ! function_exists( 'understrap_adjust_body_class' ) ) {
 	/**
 	 * Setup body classes.
 	 *
@@ -41,7 +41,7 @@ if ( ! function_exists( 'adjust_body_class' ) ) {
 	 *
 	 * @return mixed
 	 */
-	function adjust_body_class( $classes ) {
+	function understrap_adjust_body_class( $classes ) {
 
 		foreach ( $classes as $key => $value ) {
 			if ( 'tag' == $value ) {
@@ -55,9 +55,9 @@ if ( ! function_exists( 'adjust_body_class' ) ) {
 }
 
 // Filter custom logo with correct classes.
-add_filter( 'get_custom_logo', 'change_logo_class' );
+add_filter( 'get_custom_logo', 'understrap_change_logo_class' );
 
-if ( ! function_exists( 'change_logo_class' ) ) {
+if ( ! function_exists( 'understrap_change_logo_class' ) ) {
 	/**
 	 * Replaces logo CSS class.
 	 *
@@ -65,9 +65,9 @@ if ( ! function_exists( 'change_logo_class' ) ) {
 	 *
 	 * @return mixed
 	 */
-	function change_logo_class( $html ) {
+	function understrap_change_logo_class( $html ) {
 
-		$html = str_replace( 'class="custom-logo"', 'class="img-responsive"', $html );
+		$html = str_replace( 'class="custom-logo"', 'class="img-fluid"', $html );
 		$html = str_replace( 'class="custom-logo-link"', 'class="navbar-brand custom-logo-link"', $html );
 		$html = str_replace( 'alt=""', 'title="Home" alt="logo"' , $html );
 
@@ -89,25 +89,21 @@ if ( ! function_exists( 'understrap_post_nav' ) ) :
 			return;
 		}
 		?>
-
-		<div class="row">
-			<div class="col-md-12">
-				<nav class="navigation post-navigation">
+				<nav class="container navigation post-navigation">
 					<h2 class="sr-only"><?php _e( 'Post navigation', 'understrap' ); ?></h2>
-					<div class="nav-links">
+					<div class="row nav-links justify-content-between">
 						<?php
 
 							if ( get_previous_post_link() ) {
-								previous_post_link( '<span class="nav-previous float-xs-left">%link</span>', _x( '<i class="fa fa-angle-left"></i>&nbsp;%title', 'Previous post link', 'understrap' ) );
+								previous_post_link( '<span class="nav-previous">%link</span>', _x( '<i class="fa fa-angle-left"></i>&nbsp;%title', 'Previous post link', 'understrap' ) );
 							}
 							if ( get_next_post_link() ) {
-								next_post_link( '<span class="nav-next float-xs-right">%link</span>',     _x( '%title&nbsp;<i class="fa fa-angle-right"></i>', 'Next post link', 'understrap' ) );
+								next_post_link( '<span class="nav-next">%link</span>',     _x( '%title&nbsp;<i class="fa fa-angle-right"></i>', 'Next post link', 'understrap' ) );
 							}
 						?>
 					</div><!-- .nav-links -->
 				</nav><!-- .navigation -->
-			</div>
-		</div>
+
 		<?php
 	}
 endif;

@@ -9,18 +9,17 @@
 
 get_header();
 $container   = get_theme_mod( 'understrap_container_type' );
-$sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 ?>
 
 
 <div class="wrapper" id="author-wrapper">
 
-	<div class="<?php echo esc_html( $container ); ?>" id="content" tabindex="-1">
+	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">
 
 			<!-- Do the left sidebar check -->
-			<?php get_template_part( 'global-templates/left-sidebar-check', 'none' ); ?>
+			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
 			<main class="site-main" id="main">
 
@@ -41,7 +40,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 						<?php if ( ! empty( $curauth->user_url ) ) : ?>
 							<dt><?php esc_html_e( 'Website', 'understrap' ); ?></dt>
 							<dd>
-								<a href="<?php echo esc_html( $curauth->user_url ); ?>"><?php echo esc_html( $curauth->user_url ); ?></a>
+								<a href="<?php echo esc_url( $curauth->user_url ); ?>"><?php echo esc_html( $curauth->user_url ); ?></a>
 							</dd>
 						<?php endif; ?>
 
@@ -63,7 +62,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 						<?php while ( have_posts() ) : the_post(); ?>
 							<li>
 								<a rel="bookmark" href="<?php the_permalink() ?>"
-								   title="Permanent Link: <?php the_title(); ?>">
+								   title="<?php esc_html_e( 'Permanent Link:', 'understrap' ); ?> <?php the_title(); ?>">
 									<?php the_title(); ?></a>,
 								<?php understrap_posted_on(); ?> <?php esc_html_e( 'in',
 								'understrap' ); ?> <?php the_category( '&' ); ?>
@@ -88,11 +87,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 		</div><!-- #primary -->
 
 		<!-- Do the right sidebar check -->
-		<?php if ( 'right' === $sidebar_pos || 'both' === $sidebar_pos ) : ?>
-
-			<?php get_sidebar( 'right' ); ?>
-
-		<?php endif; ?>
+		<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
 
 	</div> <!-- .row -->
 
